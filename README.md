@@ -8,7 +8,6 @@
 
 # Link Youtube: https://youtu.be/D4-oadY7qAk
 
-# Link deploy dự án: 
+# Domains: https://shoesstore-5qybq14h0-khoi300399.vercel.app/
 
 # Note: Check box and delete button in Cart.jsx has no functionality; therefore, they are not coded. This has been discussed with mentor.
-
