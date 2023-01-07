@@ -52,8 +52,8 @@ const Header = () => {
   const logOut = () => {
     if (userLogin) {
       return (
-        <NavLink
-          className={"nav-link"}
+        <button
+          className="nav-link"
           onClick={() => {
             huyStore(USER_LOGIN);
             eraseCookie(TOKEN);
@@ -61,8 +61,8 @@ const Header = () => {
             window.location.reload();
           }}
         >
-          <i class="fa-solid fa-arrow-right-long"></i>
-        </NavLink>
+          <i class="fa-solid fa-arrow-right-long"></i> Log out
+        </button>
       );
     }
   };

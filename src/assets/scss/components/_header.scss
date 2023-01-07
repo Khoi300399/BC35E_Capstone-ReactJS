@@ -1,65 +1,67 @@
 header {
-    .navbar {
+  .navbar {
+    background-color: $color-black;
+    height: 50px;
+    .navbar-brand {
+      margin: 10px;
+      object-fit: cover;
+    }
+    .navbar-collapse {
+      .navbar-nav {
+        align-items: center;
+      }
+      .nav-link {
+        @include text($fs-16, $fw-300, $color-white-2);
+        background: transparent;
+        padding-right: 25px !important;
+        margin-top: 3px !important;
+        cursor: pointer;
+      }
+      .nav-link-cart {
+        @include text($fs-18, $fw-300, $color-white);
+        padding-right: 15px !important;
+        &.nav-flex {
+          display: flex;
+          align-items: center;
+          margin-left: 12px;
+        }
+        &.nav-big {
+          font-size: 30px;
+        }
+        &.nav-semi {
+          font-size: 24px;
+        }
+        i {
+          font-size: 32px;
+          margin-right: 8px;
+        }
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+  .nav {
+    background-color: $color-white;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 30px;
+    .nav-link-2 {
+      @include text($fs-20, $fw-300, $color-black);
+      margin-right: 30px !important;
+    }
+    .is-active {
+      font-weight: $fw-400;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 100%;
+        height: 2px;
+        left: 0;
         background-color: $color-black;
-        height: 50px;
-        .navbar-brand {
-            margin: 10px;
-            object-fit: cover;
-        }
-        .navbar-collapse {
-            .navbar-nav {
-                align-items: center;
-            }
-            .nav-link {
-                @include text($fs-16, $fw-300, $color-white-2);
-                padding-right: 25px !important;
-                margin-top: 3px !important;
-            }
-            .nav-link-cart {
-                @include text($fs-18, $fw-300, $color-white);
-                padding-right: 15px !important;
-                &.nav-flex {
-                    display: flex;
-                    align-items: center;
-                    margin-left: 12px;
-                }
-                &.nav-big {
-                    font-size: 30px;
-                }
-                &.nav-semi {
-                    font-size: 24px;
-                }
-                i {
-                    font-size: 32px;
-                    margin-right: 8px;
-                }
-                img {
-                    margin-right: 8px;
-                }
-            }
-        }
+      }
     }
-    .nav {
-        background-color: $color-white;
-        height: 50px;
-        padding-top: 12px;
-        padding-left: 30px;
-        .nav-link-2 {
-            @include text($fs-20, $fw-300, $color-black);
-            margin-right: 30px !important;
-        }
-        .is-active {
-            font-weight: $fw-400;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: -1px;
-                width: 100%;
-                height: 2px;
-                left: 0;
-                background-color: $color-black;
-            }
-        }
-    }
+  }
 }
