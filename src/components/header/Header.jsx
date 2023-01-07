@@ -53,7 +53,7 @@ const Header = () => {
     if (userLogin) {
       return (
         <button
-          className="nav-link"
+          className="nav-logout"
           onClick={() => {
             huyStore(USER_LOGIN);
             eraseCookie(TOKEN);

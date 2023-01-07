@@ -12,6 +12,11 @@ header {
       }
       .nav-link {
         @include text($fs-16, $fw-300, $color-white-2);
+        padding-right: 25px !important;
+        margin-top: 3px !important;
+      }
+      .nav-logout {
+        @include text($fs-16, $fw-300, $color-white-2);
         background: transparent;
         padding-right: 25px !important;
         margin-top: 3px !important;
