@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { useDispatch} from "react-redux";
+import { useDispatch } from "react-redux";
 import { Formik, Form } from "formik";
 import Input from "../../components/input/Input.jsx";
 import * as Yup from "yup";
@@ -52,7 +52,7 @@ const Login = () => {
             const actionsAsync = loginApi(values);
             await dispatch(actionsAsync);
 
-            navigate("/profile");
+            navigate("/");
           }}
         >
           {({ isSubmitting }) => (
