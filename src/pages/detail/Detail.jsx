@@ -99,16 +99,11 @@ const Detail = () => {
           </div>
         </div>
       </div>
-
       <div className="heading-bar line mt-5">
         <h2>-Realate Product -</h2>
       </div>
 
       <div className="container realate-product">
-        <div className="color"></div>
-        <div className="color"></div>
-        <div className="color"></div>
-        <div className="color"></div>
         <div id="productDisplay" className="row">
           {productDetail?.relatedProducts.map((item, index) => {
             return (

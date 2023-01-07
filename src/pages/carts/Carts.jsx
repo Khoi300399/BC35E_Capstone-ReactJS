@@ -107,7 +107,7 @@ const Carts = () => {
                       </span>
                     </div>
                   </td>
-                  <td className="text-center">{item.price}</td>
+                  <td className="text-center">{item.soLuong*item.price}</td>
                   <td>
                     <div className="button">
                       <a href="..." type="button" className="btn btn-primary">
