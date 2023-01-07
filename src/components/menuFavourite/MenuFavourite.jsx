@@ -54,6 +54,7 @@ const MenuFavourite = () => {
         onChange={onChange}
         current={current}
         pageSize={pageSize}
+        hideOnSinglePage={true}
         total={productFavorite.length}
         className="pl-5 ml-5"
       />

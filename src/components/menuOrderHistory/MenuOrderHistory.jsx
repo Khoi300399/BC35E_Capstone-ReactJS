@@ -68,6 +68,7 @@ const MenuOrderHistory = () => {
         <Pagination
           defaultCurrent={1}
           onChange={onChange}
+          hideOnSinglePage={true}
           current={current}
           total={profile?.ordersHistory.length}
           className="text-right"

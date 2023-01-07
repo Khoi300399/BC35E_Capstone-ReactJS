@@ -61,7 +61,7 @@ const Header = () => {
             window.location.reload();
           }}
         >
-          <i class="fa-solid fa-arrow-right-long"></i> Log out
+          <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
         </button>
       );
     }
