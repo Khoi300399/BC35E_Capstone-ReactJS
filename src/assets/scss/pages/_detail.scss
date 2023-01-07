@@ -1,0 +1,133 @@
+.detail {
+  position: relative;
+  .color {
+    position: absolute;
+
+    filter: blur(150px);
+
+    &:nth-child(1) {
+      @include size(70%, 70%);
+      top: 6rem;
+      background: #ff359b;
+    }
+    &:nth-child(2) {
+      @include size(60%, 65%);
+      bottom: -15rem;
+      left: 10rem;
+      background: #fffd87;
+    }
+    &:nth-child(3) {
+      @include size(60%, 40%);
+      bottom: 5rem;
+      right: 10rem;
+      background: #00d2ff;
+    }
+    &:nth-child(4) {
+      @include size(70%, 70%);
+      top: 6rem;
+      right: 5rem;
+      background: #fffd87;
+    }
+  }
+  margin: 50px 0;
+  .thumb {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .content {
+    h2 {
+      @include text($fs-30, $fw-300, $color-black);
+    }
+    .size {
+      h3 {
+        @include text($fs-24, $fw-500, #1ed90e);
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style: none;
+        li {
+          display: inline-block;
+          margin-right: 10px;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(5px);
+
+          border: 0.1rem solid rgba(255, 255, 255, 0.5);
+          padding: 10px;
+          font-weight: $fw-500;
+        }
+      }
+    }
+    .price {
+      @include text($fs-30, $fw-600, $color-red);
+    }
+    .quatity {
+      margin: 20px 0 0;
+      input {
+        width: 40px;
+        text-align: center;
+        border: none;
+      }
+      span {
+        background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+        color: $color-white;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(
+        270deg,
+        rgba(62, 32, 248, 0.9) 5.14%,
+        #d017ee 89.71%
+      );
+      color: $color-white;
+      padding: 10px 30px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.realate-product {
+  position: relative;
+  .color {
+    position: absolute;
+
+    filter: blur(150px);
+
+    &:nth-child(1) {
+      @include size(70%, 70%);
+      top: 6rem;
+      background: #ff359b;
+    }
+    &:nth-child(2) {
+      @include size(60%, 65%);
+      bottom: -15rem;
+      left: 10rem;
+      background: #fffd87;
+    }
+    &:nth-child(3) {
+      @include size(60%, 40%);
+      bottom: 5rem;
+      right: 10rem;
+      background: #00d2ff;
+    }
+    &:nth-child(4) {
+      @include size(70%, 70%);
+      top: 6rem;
+      right: 5rem;
+      background: #fffd87;
+    }
+  }
+}

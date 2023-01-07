@@ -1,0 +1,97 @@
+#carouselAPI {
+  position: relative;
+  overflow-x: hidden;
+
+  .carousel-indicators {
+    bottom: 35px;
+    li {
+      width: 10px;
+      height: 10px;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      margin-right: 10px;
+      &.active {
+        background-color: #eee;
+      }
+    }
+  }
+  .carousel-control-prev {
+    left: -75px;
+    .carousel-control-prev-icon {
+      background-image: url("../../img/Polygon 2.png");
+      width: 40px;
+      height: 50px;
+    }
+  }
+  .carousel-control-next {
+    right: -75px;
+    .carousel-control-next-icon {
+      background-image: url("../../img/Polygon 1.png");
+      width: 40px;
+      height: 50px;
+    }
+  }
+
+  .carousel-item {
+    padding-bottom: 80px;
+    background-image: url("../../img/image-6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    .row {
+      align-items: center;
+      img {
+        margin-left: 80px;
+      }
+    }
+    .carousel-content {
+      h2 {
+        @include text($fs-40, $fw-300, $color-black);
+      }
+      p {
+        @include text($fs-20, $fw-300, $color-black);
+      }
+      a {
+        background-color: $color-btn-orange;
+        @include text($fs-20, $fw-300, $color-white);
+        padding: 10px 30px;
+        margin-top: 20px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.carousel-content {
+  position: relative;
+  .color {
+    position: absolute;
+
+    filter: blur(150px);
+
+    &:nth-child(1) {
+      @include size(70%, 70%);
+      top: 6rem;
+      background: #ff359b;
+    }
+    &:nth-child(2) {
+      @include size(60%, 65%);
+      bottom: -15rem;
+      left: 10rem;
+      background: #fffd87;
+    }
+    &:nth-child(3) {
+      @include size(60%, 40%);
+      bottom: 5rem;
+      right: 10rem;
+      background: #00d2ff;
+    }
+    &:nth-child(4) {
+      @include size(70%, 70%);
+      top: 6rem;
+      right: 5rem;
+      background: #fffd87;
+    }
+  }
+}

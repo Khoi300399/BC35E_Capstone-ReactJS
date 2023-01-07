@@ -1,0 +1,122 @@
+.cart {
+  margin: 100px 0;
+  position: relative;
+  .color {
+    position: absolute;
+
+    filter: blur(150px);
+
+    &:nth-child(1) {
+      @include size(70%, 70%);
+      top: 60rem;
+      background: #ff359b;
+    }
+    &:nth-child(2) {
+      @include size(60%, 65%);
+      bottom: -30rem;
+      left: 10rem;
+      background: #fffd87;
+    }
+    &:nth-child(3) {
+      @include size(60%, 40%);
+      bottom: -15rem;
+      right: 10rem;
+      background: #00d2ff;
+    }
+    &:nth-child(4) {
+      @include size(50%, 50%);
+      top: 50rem;
+      right: 5rem;
+      background: #fffd87;
+    }
+  }
+  h1 {
+    @include text($fs-40, $fw-300, $color-black);
+    border-bottom: 1px solid $color-gray-1;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  table {
+    thead {
+      margin-bottom: 15px;
+      th {
+        font-weight: $fw-400;
+      }
+      tr:first-child {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border: 0.1rem solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+      }
+    }
+    .w-250 {
+      width: 250px;
+    }
+    .w-200 {
+      width: 200px;
+    }
+    td {
+      vertical-align: middle;
+    }
+    .form-check-input {
+      position: relative;
+      margin: 0;
+    }
+    .td-img {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    .td-name {
+      width: 300px;
+    }
+    .quatity {
+      span {
+        background-color: $color-btn-violet;
+        color: #fff;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14),
+          0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        padding: 8px 14px;
+        font-weight: $fw-600;
+        cursor: pointer;
+      }
+      input {
+        width: 100px;
+        padding: 5px;
+        background-color: $color-gray-1;
+        text-align: center;
+        border: none;
+        margin: 0 10px;
+      }
+    }
+    .button {
+      text-align: right;
+      a {
+        padding: 5px 20px;
+        border: none;
+        font-size: $fs-20;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14),
+          0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+        &:first-child {
+          background-color: $color-btn-violet;
+        }
+        &:last-child {
+          // background-color: $color-btn-violet;
+          background-color: $color-red;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .btn-warning {
+    padding: 5px 20px;
+    font-size: $fs-20;
+    text-align: right;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14),
+      0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+    color: $color-white;
+  }
+}

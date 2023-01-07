@@ -1,0 +1,18 @@
+.form-radio {
+  position: relative;
+  input {
+    // appearance: none;
+    // visibility: hidden;
+    @include posCenter(left);
+    @include size(25px, 25px);
+
+    &:checked + p {
+      color: $color-gdt-blue;
+    }
+    z-index: 10;
+  }
+
+  p {
+    margin-top: 35px;
+  }
+}

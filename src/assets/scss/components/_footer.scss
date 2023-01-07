@@ -1,0 +1,38 @@
+.footer {
+    margin-top: 50px;
+    .top {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: relative;
+    }
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 5px;
+            font-weight: $fw-600;
+            a {
+                color: $color-black;
+
+                &.link {
+                    color: $color-red;
+                }
+            }
+        }
+    }
+    .border-left {
+        border-left: 1px solid $color-gray-1;
+        padding-left: 50px;
+    }
+    h5 {
+        @include text($fs-20, $fw-700, $color-black);
+        margin-bottom: 15px;
+    }
+    .top {
+        padding: 30px 0;
+    }
+    .bottom {
+        background-color: $color-gray-3;
+        padding: 20px 0 10px;
+        text-align: center;
+        @include text($fs-20, $fw-400, $color-black);
+    }
+}

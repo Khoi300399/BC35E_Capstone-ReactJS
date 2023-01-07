@@ -1,0 +1,40 @@
+.menu-favorite {
+  @include size(100%, 100%);
+  .title {
+    @include text($fs-30, $fw-500, $color-white);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 35px;
+  }
+
+  &-box {
+    @include size(90%, 70%);
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+
+    .thumb {
+      padding: 30px;
+      text-align: center;
+
+      img {
+        @include size(100%, 100%);
+        object-fit: cover;
+      }
+    }
+    .content {
+      padding: 0 15px;
+      text-align: center;
+      h3 {
+        @include text($fs-16, $fw-300, $color-black);
+        height: 40px;
+      }
+    }
+  }
+  :where(.css-dev-only-do-not-override-acm2ia)[class^="ant-pagination"],
+  :where(.css-dev-only-do-not-override-acm2ia)[class*=" ant-pagination"] {
+    @include posAbsolute(br, 10px, 20%);
+  }
+}

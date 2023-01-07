@@ -1,0 +1,125 @@
+.profile {
+  position: relative;
+  overflow: hidden;
+
+  &-icon i {
+    @include size(80px, 47px);
+    @include posAbsolute(tl, 40px, -25px);
+    @include text($fs-24, $fw-400, $color-white);
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    z-index: 10;
+    cursor: pointer;
+    &:hover {
+      color: #f12711 !important;
+      @include posAbsolute(tl, 40px, -15px);
+    }
+  }
+  .color {
+    position: absolute;
+    filter: blur(150px);
+
+    &:nth-child(1) {
+      @include size(80%, 70%);
+      top: -35rem;
+      background: #ff359b;
+    }
+    &:nth-child(2) {
+      @include size(60%, 65%);
+      bottom: -15rem;
+      left: 10rem;
+      background: #fffd87;
+    }
+    &:nth-child(3) {
+      @include size(60%, 40%);
+      bottom: 5rem;
+      right: 10rem;
+      background: #00d2ff;
+    }
+  }
+  &-left {
+    height: 100vh;
+    @include flexbox(center, center, column);
+    &-sidebar {
+      @include size(35rem, 90%);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
+      border-radius: 1rem;
+      border: 0.1rem solid rgba(255, 255, 255, 0.5);
+      border-right: 0.1rem solid rgba(255, 255, 255, 0.8);
+      border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      position: relative;
+
+      transition: all 0.5s linear;
+    }
+    &-img {
+      @include size(150px, 150px);
+      //   border-radius: 50%;
+      @include posCenter(left);
+    }
+    &-img img {
+      @include size(100%, 100%);
+      //   object-fit: cover;
+      border-radius: 50%;
+    }
+    &-icon {
+      height: 55px;
+      i {
+        @include posAbsolute(tr, 10px, 10px);
+        padding: 10px;
+        color: $color-white;
+        border-radius: 5px;
+        border: 0.1rem solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover {
+          color: #f12711 !important;
+          rotate: -90deg;
+        }
+      }
+    }
+    &-info {
+      @include posCenter(left);
+      top: 215px;
+      h3 {
+        color: #f12711;
+      }
+    }
+    &-menu {
+      @include posAbsolute(bl, 10px, 10px);
+      @include size(100%, 55%);
+
+      .menu-item {
+        height: 50px;
+        margin-bottom: 15px;
+        position: relative;
+        transition: all 0.5s linear;
+        &:hover {
+          border: 0.1rem solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+          border-right: 0.1rem solid rgba(255, 255, 255, 0.8);
+          border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+          border-left: 1rem solid #f12711;
+        }
+      }
+
+      a {
+        @include posCenter(top);
+        @include text($fs-24, $fw-500, #f80759);
+        padding-left: 30px;
+      }
+    }
+  }
+  &-right {
+    height: 100vh;
+    transition: all 0.5s linear;
+  }
+}

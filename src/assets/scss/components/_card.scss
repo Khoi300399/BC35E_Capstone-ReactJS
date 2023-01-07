@@ -1,0 +1,55 @@
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 50px;
+  transition: all 0.5s linear;
+  .thumb {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .icon {
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      @include text($fs-40, $fw-300, $color-red);
+    }
+  }
+  .content {
+    padding: 0 15px;
+    h3 {
+      @include text($fs-24, $fw-500, $color-black);
+      height: 60px;
+    }
+    p {
+      @include text($fs-20, $fw-400, $color-black);
+      height: 90px;
+    }
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    div {
+      width: 50%;
+      text-align: center;
+      padding: 15px;
+      &:first-child {
+        background-color: $color-btn-green;
+        @include text($fs-24, $fw-300, $color-black);
+        border-radius: 0 0 0 10px;
+      }
+      &:last-child {
+        background-color: $color-gray-1;
+        @include text($fs-24, $fw-600, $color-black);
+        border-radius: 0 0 10px 0;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+}

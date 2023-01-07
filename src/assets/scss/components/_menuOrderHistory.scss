@@ -1,0 +1,59 @@
+.menu-order {
+  @include size(100%, 100%);
+
+  .title {
+    @include text($fs-30, $fw-500, $color-white);
+    text-align: center;
+    padding-bottom: 55px;
+    padding-top: 35px;
+  }
+
+  .table-content {
+    @include size(90%, 100%);
+    margin: auto;
+  }
+
+  .table {
+    @include size(90%, 60%);
+
+    thead {
+      tr {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        border: 0.1rem solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+      }
+
+      th {
+        text-align: center;
+      }
+    }
+
+    tbody {
+      border: none;
+      tr {
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.8);
+      }
+      td {
+        text-align: center;
+        position: relative;
+      }
+
+      img {
+        @include size(85px, 85px);
+        @include posCenter(both);
+      }
+
+      span {
+        @include posCenter(both);
+      }
+    }
+  }
+  :where(.css-dev-only-do-not-override-acm2ia).ant-select-single:not(
+      .ant-select-customize-input
+    )
+    .ant-select-selector {
+    display: none;
+  }
+}
